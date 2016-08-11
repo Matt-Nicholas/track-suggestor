@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link href="css/bootstrap.css" rel="stylesheet" media="screen">
+    <link href="css/styles.css" rel="stylesheet" media="screen">
+    <script src="js/jquery-3.1.0.js"></script>
+    <script src="js/scripts.js"></script>
+    <title>Track-Suggestor</title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="header">
+        <h1>Track Suggestor</h1>
+        <h3>Fill out the following survey for help deciding which Epicodus track to take!</h3>
+      </div><!--header-->
+      <form id="survey">
+        <ol><!--Survey Questions-->
+          <li>
+            <h4>Choose the option that interests you the most.</h4>
+            <select class="form-control" id="interests">
+              <option value="0">Building internal business software</option>
+              <option value="1">Mobile app development</option>
+              <option value="2">Making content heavy websites </option>
+              <option value="3">Making interactive web sites</option>
+              <option value="4">I don't know yet</option>
+            </select>
+          </li>
+
+          <li>
+            <h4>Would you prefer to work in back-end or front-end programming?</h4>
+            <div class="radio">
+              <label><input type="radio" name="whichEnd" value="back">Back-End</label>
+            </div>
+            <div class="radio">
+              <label><input type="radio" name="whichEnd" value="front">Font-End</label>
+            </div>
+          </li>
+
+          <li>
+            <div class="blanks">
+              <div class="form-group">
+                <label for="favLang"><h4>Of the languages you've used so far wich has been you're favorite?</h4></label>
+                <input id="favLang" class="form-control" type="text">
+              </div>
+            </div>
+          </li>
+
+          <li>
+            <h4>Do you enjoy making things function or making things pretty?</h4>
+            <div class="radio">
+              <label><input type="radio" name="func" value="work">Make it work!</label>
+            </div>
+            <div class="radio">
+              <label><input type="radio" name="func" value="pretty">Make it pretty!</label>
+            </div>
+          </li>
+
+          <li>
+            <h4>Choose the type of company you would like to work for.</h4>
+            <div class="radio">
+              <label><input type="radio" name="cpny" value="lg">Large company like Nike, Google or HP</label>
+            </div>
+            <div class="radio">
+              <label><input type="radio" name="cpny" value="sm">Small startup company</label>
+            </div>
+            <div class="radio">
+              <label><input type="radio" name="cpny" value="indy">I would like to work for my self</label>
+            </div>
+            <div class="radio">
+              <label><input type="radio" name="cpny" value="any">I just want a job</label>
+            </div>
+          </li>
+        </ol><!--Survey Questions-->
+        <button type="submit" class="btn">Suggest my track!</button>
+      </form>
+    </div><!--container-->
+  </body>
+</html>

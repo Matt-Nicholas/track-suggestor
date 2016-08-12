@@ -1,12 +1,13 @@
 $(document).ready(function(){ //Waits until the page is loaded to run JS
   var suggetion;
-  $("form#survey").submit(function(event){ //Runs when th esubmit button is pressed
+  $("form#survey").submit(function(event){ //Runs when the submit button is pressed
     event.preventDefault();
+
     var interests = $("#interests").val();
     var whichEnd = $("input:radio[name=whichEnd]:checked").val();
     var favLang = $("#favLang").val();
     var func = $("input:radio[name=func]:checked").val();
-    var cpny = $("input:radio[name=cpny]:checked").val();
+    var comp = $("input:radio[name=comp]:checked").val();
 
     if(interests == "0" && (whichEnd == "back" || func == "work")){
       localStorage.suggestion = "cSharp";
@@ -31,10 +32,9 @@ $(document).ready(function(){ //Waits until the page is loaded to run JS
       alert("none");
       localStorage.suggestion = "none";
     }
-
-
   });
-  $(".reveal").click(function(){
+
+  $(".reveal").click(function(){ //Shows track suggestion when clicked
     if(localStorage.suggestion === "cSharp"){
       $(".cSharp").fadeToggle();
     }

@@ -2,6 +2,29 @@ h1{
   text-align: center;
 }
 
-#survey{
-  margin-top: 50px;
+h3{
+  margin-bottom: 50px;
+}
+
+.cSharp{
+  display: none;
+}
+
+.java{
+  display: none;
+}
+
+.php{
+  display: none;
+}
+
+.ruby{
+  display: none;
+}
+
+.css{
+display: none;
+}
+.none{
+  display: none;
 }

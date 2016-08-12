@@ -13,23 +13,18 @@ $(document).ready(function(){ //Waits until the page is loaded to run JS
       localStorage.suggestion = "cSharp";
     }
     else if(interests == "1" && (whichEnd == "back" || func == "work")){
-      alert("JAVA/Android");
       localStorage.suggestion = "java";
     }
     else if(interests == "2" && (whichEnd == "back" || func == "work")){
-      alert("PHP/Drupal");
       localStorage.suggestion = "php";
     }
     else if(interests == "3" && (whichEnd == "back" || func == "work")){
-      alert("RUBY/Rails");
       localStorage.suggestion = "ruby";
     }
     else if(interests == "4" && (whichEnd == "front" || func == "pretty")){
-      alert("CSS/Design");
       localStorage.suggestion = "css";
     }
     else{
-      alert("none");
       localStorage.suggestion = "none";
     }
   });
